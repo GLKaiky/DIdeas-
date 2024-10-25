@@ -12,9 +12,6 @@ Criar novos personagens para as campanhas, pensar em novos nomes, pensar em vest
 ## Alunos integrantes da equipe
 
 * Kaiky França da Silva 
-* Maria Eduarda Pinto Martins
-* Letícia Azevedo Cota Barbosa
-* Arthur Morais Pimenta
 
 ## Professores responsáveis
 
