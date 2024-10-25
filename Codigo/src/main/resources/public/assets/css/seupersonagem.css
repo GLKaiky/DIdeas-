@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+p{
+    color: black;
+    font-family: 'MedievalSharp', sans-serif;
+}
+h1{
+    color: black;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px; /* Defina a largura do contêiner conforme necessário */
+    height: 200px; /* Defina a altura do contêiner conforme necessário */
+    border: 1px solid #ccc; /* Apenas para fins de demonstração */
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do contêiner */
+    margin: 0 auto;
+}
+
+#fotoPersonagem img {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+    height: 100%; /* A imagem ocupa 100% da altura do contêiner */
+    object-fit: cover; /* Ajusta a imagem para preencher o contêiner mantendo sua proporção */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fotoPersonagem #lapis2 {
+    opacity: 0;
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 50%; /* Coloca o lápis no meio verticalmente */
+    left: 50%; /* Coloca o lápis no meio horizontalmente */
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    transition: opacity 0.3s ease-in-out; /* Move a transição para o seletor normal do elemento */
+    cursor: pointer;
+}
+
+#fotoPersonagem #lapis2:hover {
+    opacity: 1; /* Defina a opacidade para 1 quando estiver em hover */
+}
+
+#imageInput{
+    display: none;
+}
+
+.caracteristicas {
+    margin-top: 20px; /* Espaço entre o contêiner e as características */
+    display:grid;
+  }
+
+  .caracteristicas h1 {
+    margin-left: 20px; /* Espaço entre as características e o contêiner */
+  }
+  
+  .caracteristicas p{
+    margin-left: 18px;
+    overflow-wrap: break-word; 
+  }
+
+  button{
+    border-radius: 15px;
+    display: block; /* Torna o botão um bloco para ocupar toda a largura disponível */
+    margin: 0 auto; /* Define margens automáticas para centralizar horizontalmente */
+    width: 100px; /* Define uma largura fixa para o botão (opcional) */
+    height: 40px; /* Define uma altura fixa para o botão (opcional) */
+  }
+
+

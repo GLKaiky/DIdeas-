@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie seu Personagem</title>
+    <link rel="stylesheet" href="/assets/css/login_registro.css" class="css">
+</head>
+
+<body>
+
+    <div class="navBar">
+        <div class="profile">
+            <h1></h1>
+        </div>
+        <div class="navButtons">
+            <button><a href="/index.html">Home</a></button>
+            <button><a href="/assets/paginas/perfil.html">Perfil & Personagens</a></button>
+            <button><a href="/assets/paginas/rolar.html">Rolar os Dados</a></button>
+            <button><a href="/assets/paginas/criarPersonagem.html">Criar um Personagem</a></button>
+            <button><a href="/assets/paginas/chat.html">D&deas AI</a></button>
+        </div>
+    </div>
+    
+    <div class="container">
+
+        <div class="form">
+            <form action="#" id="formulario">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Crie seu Personagem</h1>
+                    </div>
+                    <div class="login-buttom">
+                        <button><a href="perfil.html">Voltar para Perfil</a></button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="Nome do Personagem">Nome do Personagem</label>
+                        <input id="nomedopersonagem" type="text" name="Nome do Personagem" placeholder="Digite o Nome"
+                            required>
+                    </div>
+                    <div class="input-box">
+                        <label for="Descrição">Descrição</label>
+                        <input id="descricao" type="text" name="Descrição" placeholder="Descrição do Personagem"
+                            required>
+                    </div>
+                    <div class="input-box">
+                        <label for="Historia">Historia</label>
+                        <input id="historia" type="text" name="Historia" placeholder="Digite sua Historia" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Tendencia</label>
+                        <div class="checkbox-container">
+                            <input id="tendencia" type="radio" value="Heroi" name="tendencia"
+                                placeholder="Escolha t Tendencia" onclick="uncheckAllExcept('Tendencia')" required>
+                            <label for="Tendencia">Herói</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input id="tendencia2" type="radio" value="Vilao" name="tendencia"
+                                placeholder="Escolha a Tendencia" onclick="uncheckAllExcept('Tendencia2')" required>
+                            <label for="Tendencia2">Vilão</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input id="tendencia3" type="radio" value="Neutro" name="tendencia"
+                                placeholder="Escolha a Tendencia" onclick="uncheckAllExcept('Tendencia3')" required>
+                            <label for="Tendencia3">Neutro</label>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="Religiao">Religião</label>
+                        <input id="religiao" type="text" name="Religiao" placeholder="Religiao">
+                    </div>
+
+                    <div class="input-box select-box">
+                        <label for="Classe">Classe</label>
+                        <select name="Classes" id="classe">
+                            <option value="Bárbaro">Bárbaro</option>
+                            <option value="Bardo">Bardo</option>
+                            <option value="Clérigo">Clérigo</option>
+                            <option value="Druida">Druida</option>
+                            <option value="Guerreiro">Guerreiro</option>
+                            <option value="Patrulheiro">Monge</option>
+                            <option value="Paladino">Paladino</option>
+                            <option value="Ladino">Ladino</option>
+                            <option value="Feiticeiro">Feiticeiro</option>
+                            <option value="Mago">Mago</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box select-box">
+                        <label for="racas">Escolha uma raça:</label>
+                        <select id="racas" name="racas">
+                            <option value="Anão">Anão</option>
+                            <option value="Elfo">Elfo</option>
+                            <option value="Halfling">Halfling</option>
+                            <option value="Humano">Humano</option>
+                            <option value="Dragãoborn">Dragãoborn</option>
+                            <option value="Gnomo">Gnomo</option>
+                            <option value="Meio-Elfo">Meio-Elfo</option>
+                            <option value="Meio-Orc">Meio-Orc</option>
+                            <option value="Tiefling">Tiefling</option>
+                        </select>
+
+                    </div>
+
+                    <div class="input-box">
+                        <label for="">Atributos</label>
+                        <input type="number" id="sabedoria" placeholder="Sabedoria" min="0" step="1">
+                        <input type="number" id="forca" placeholder="Força" min="0" step="1">
+                        <input type="number" id="destreza" placeholder="Destreza" min="0" step="1">
+                        <input type="number" id="constituicao" placeholder="Constituição" min="0" step="1">
+                        <input type="number" id="inteligencia" placeholder="Inteligencia" min="0" step="1">
+                        <input type="number" id="carisma" placeholder="Carisma" min="0" step="1">
+                    </div>
+                </div>
+                <div class="continue-button">
+                    <button id="enviar" onclick="enviar()"><a id="frase" href="/assets/paginas/perfil.html">Criar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/personagem.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

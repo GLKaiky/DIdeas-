@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ti2cc</groupId>
+  <artifactId>mavem.ti2cc</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+    
+  <dependencies>
+	
+<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.7.3</version>
+</dependency>
+
+	
+		<!-- https://mvnrepository.com/artifact/com.sparkjava/spark-core -->
+	<dependency>
+	    <groupId>com.sparkjava</groupId>
+	    <artifactId>spark-core</artifactId>
+	    <version>2.9.4</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-simple</artifactId>
+		<version>1.7.21</version>
+	</dependency>
+
+	<dependency>
+		<groupId>com.google.code.gson</groupId>
+		<artifactId>gson</artifactId>
+		<version>2.10.1</version>
+	</dependency>
+	
+  <dependency>
+      <groupId>com.azure</groupId>
+      <artifactId>azure-storage-blob</artifactId>
+      <version>12.14.0</version> <!-- Versão atualizada do Azure Storage SDK -->
+  </dependency>
+  
+  <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+<dependency>
+    <groupId>com.squareup.okhttp3</groupId>
+    <artifactId>okhttp</artifactId>
+    <version>5.0.0-alpha.14</version>
+</dependency>
+
+<dependency>
+    <groupId>org.zeroturnaround</groupId>
+    <artifactId>jrebel-maven-plugin</artifactId>
+    <version>1.1.3</version>
+    <scope>runtime</scope>
+</dependency>
+	
+
+  </dependencies>
+  
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.zeroturnaround</groupId>
+            <artifactId>jrebel-maven-plugin</artifactId>
+            <version>1.1.3</version>
+            <configuration>
+                <liveReload>true</liveReload>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
+
+
+</project>

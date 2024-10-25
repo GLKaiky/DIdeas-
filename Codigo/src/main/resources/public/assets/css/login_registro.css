@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+.navBar.navButtons {
+    background-color: var(--creme2);
+
+}
+
+.navButtons button {
+    margin-top: 0.2%;
+    font-size: 19px;
+    cursor: pointer;
+    background: transparent;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    z-index: 50;
+    transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0 var(--creme3);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+}
+
+.navButtons a {
+    background: transparent;
+    font-family: 'MedievalSharp', sans-serif;
+    text-decoration: none;
+    color: #000;
+    transition: ease-out 0.5s;
+}
+
+.navButtons button:hover,
+.navButtons a:hover {
+    box-shadow: inset 400px 0 0 0 var(--creme3);
+}
+
+:root{
+    --creme1: #f6e4cc;
+    --creme2: #eedec5;
+    --creme3: #fefcf0;
+    --creme4: #f8f4e0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MedievalSharp', sans-serif;
+}
+
+body{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/Fundo-login.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container{
+    flex-wrap: wrap;
+    background-image: url(/assets/img/Fundo-login.png);
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.212);
+}
+
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/assets/img/Fundo-login.png);
+    padding: 3rem;
+}
+
+.login-buttom{
+    display: flex;
+    align-items: center;
+}
+
+.login-buttom button{
+    margin-top: 15px;
+    border: none;
+    background-color: var(--creme2);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-buttom button:hover{
+    background-color: var(--creme4);
+}
+
+.login-buttom button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
+
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--creme2);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+
+.input-group{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 20rem;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover{
+    background-color: #eeeeee75;
+
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid var(--creme2);
+}
+
+.input-box label{
+    font-size: 0.90rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+
+.select-box {
+    margin-bottom: 1.1rem;
+}
+
+.select-box select {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    background-color: #fff;
+    color: #000;
+    appearance: none; /* Remove a aparência padrão do sistema operacional */
+}
+
+.select-box select:hover {
+    background-color: #eeeeee75;
+}
+
+.select-box select:focus-visible {
+    outline: 1px solid var(--creme2);
+}
+
+.input-box input::placeholder{
+    color:#000000be
+}
+
+.continue-button button{
+    width: 100%;
+    font-size: 25px;
+    margin-top: 2rem;
+    border: none;
+    background-color: var(--creme3);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover{
+    background-color: var(--creme4);
+}
+
+.continue-button button a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+}
+
+@media screen and (max-width: 1330px) {
+    .container{
+        width: 90%;
+        height: 90vh;
+    }
+
+    .form{
+       width: 100%; 
+       padding: 8rem;
+    }
+}

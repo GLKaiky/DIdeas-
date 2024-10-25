@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="/assets/css/perfil.css" class="css">
+</head>
+
+<body>
+
+    
+    <div class="navBar">
+        <div class="profile">
+            <h1>Perfil</h1>
+        </div>
+        <div class="navButtons">
+            <button><a href="/index.html">Home</a></button>
+            <button><a href="/assets/paginas/perfil.html">Perfil & Personagens</a></button>
+            <button><a href="/assets/paginas/rolar.html">Rolar os Dados</a></button>
+            <button><a href="/assets/paginas/criarPersonagem.html">Criar um Personagem</a></button>
+            <button><a href="/assets/paginas/shop.html">Lojas</a></button>
+            <button><a href="/assets/paginas/chat.html">D&deas AI</a></button>
+        </div>
+    </div>
+
+
+    <div id="profile-class" class="profile">
+        <div class="images">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="imagem" id="input_imagem" accept="image/*">
+                <label for="input_imagem">
+                    <img id="perfil" src="/assets/img/foto_de_perfil.webp">
+                    <img id="lapis" src="/assets/img/lapis_edicao.png">
+                </label>
+            </form>
+            <div class="username">
+                <h1 id="nickName"></h1>
+                <p id="nome"></p>
+                <ion-icon  onclick="window.location.href='/assets/paginas/configuracoes.html'" id="gear" name="cog-outline"></ion-icon>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <h1 style="display: flex; flex-direction: column; align-items: center;">Seus Personagens</h1>
+    <h1 style="display: flex; flex-direction: column; align-items: center;">Pesquisar</h1>
+    <div class="topnav" style="display: flex; flex-direction: column; align-items: center;">
+        <input style="font-size: 25px; border-radius: 9px;font-family: 'MedievalSharp', sans-serif;" id="pesquisa"
+            type="text" placeholder="Pesquise por nome do personagem">
+        <button onclick="buscar()">Buscar</button>
+    </div>
+
+
+    <div id="card1">
+
+    </div>
+
+
+
+
+
+    <script src="/assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/assets/js/perfil.js"></script>
+
+
+    <footer>
+        <div class="rodape">
+            <p>®D&deas</p>
+            <p>Mais informações: Github.com/GLKaiky</p>
+            <p>1354340@sga.pucminas.br</p>
+        </div>
+        
+    </footer>
+
+</body>
+
+</html>

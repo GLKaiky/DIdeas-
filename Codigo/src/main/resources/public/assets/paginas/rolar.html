@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Role os Dados</title>
+	<link href="https://fonts.googleapis.com/css?family=Overlock:900i|Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/css/perfil.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="/assets/css/rolado.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+	<div class="navBar">
+		<div class="profile">
+			<h1>Role os Dados</h1>
+		</div>
+		<div class="navButtons">
+			<button><a href="/index.html">Home</a></button>
+			<button><a href="/assets/paginas/perfil.html">Perfil e Personagens</a></button>
+			<button><a href="/assets/paginas/rolar.html">Rolar os Dados</a></button>
+			<button><a href="/assets/paginas/criarPersonagem.html">Criar um Personagem</a></button>
+			<button><a href="/assets/paginas/chat.html">D&deas AI</a></button>
+		</div>
+	</div>
+
+	<!-- partial:index.partial.html -->
+	<div id="rolador">
+
+
+		<form action="">
+
+			<div id="checkbox">
+				<div class="checkbox">
+					<input id="advantage" type="checkbox" value="adv">advantage
+				</div>
+				<div class="checkbox">
+					<input id="disadvantage" type="checkbox" value="disadv">disadvantage
+				</div>
+			</div>
+
+			<div class="form-group row">
+
+				<div class="input-group col-xs-5 quant">
+					<span class="input-group-addon">Rolls:</span>
+					<input id="quant" type="number" class="form-control" value=1>
+				</div>
+
+				<div class="input-group col-xs-5 faces">
+					<span class="input-group-addon">Dice:</span>
+					<select id="faces" class="form-control">
+						<option value=4> D4
+						<option value=6> D6
+						<option value=8> D8
+						<option value=10> D10
+						<option value=12> D12
+						<option selected value=20> D20
+						<option value=100> 100%
+					</select>
+				</div>
+
+				<div class="input-group col-xs-5">
+					<span class="input-group-addon"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></span>
+					<input id="bonus" type="number" class="form-control" value=0>
+				</div>
+			</div>
+
+		</form>
+
+		<div id="resultados" class="form-group">
+
+			<p>Roll:</p>
+			<div class="input-group resultBox">
+				<div id="resultBox" class="form-control"></div>
+
+				<div class="input-group-btn">
+					<button id="button" class="btn btn-default">
+						<i class="fa fa-refresh fa-2x"></i>
+					</button>
+				</div>
+
+			</div>
+
+			<p>Total:</p>
+			<div class="input-group totalBox">
+				<div id="totalBox" class="form-control"></div>
+			</div>
+
+		</div>
+
+
+	</div>
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src='https://use.fontawesome.com/d5ea1bb7bc.js'></script>
+	<script src="/assets/js/rolo.js"></script>
+
+</body>
+
+</html>

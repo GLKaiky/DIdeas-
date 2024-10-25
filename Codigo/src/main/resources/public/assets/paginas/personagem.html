@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/perfil.css" class="css">
+  <link rel="stylesheet" href="/assets/css/seupersonagem.css" class="css">
+  <title>Seu Personagem</title>
+</head>
+
+<body>
+  <h1 style="display: flex; flex-direction: column; align-items: center;">Seu Personagem</h1>
+
+  <div class="container" id="fotoPersonagem">
+    <form action="">
+      <input type="file" name="imagem" id="imageInput" accept="image/*">
+      <label id="labelimg" for="imageInput">
+        <img id="perfil2" src="/assets/img/foto_de_perfil.webp" alt="">
+        <img id="lapis2" src="/assets/img/lapis_edicao.png">
+      </label>
+    </form>
+  </div>
+      <button onclick="deletar()" id="Deleteperson">Deletar</button>
+
+
+  <div class="caracteristicas">
+    <h1>Nome:</h1>
+    <h1 id="Nome"></h1>
+    <h1>Descrição:</h1>
+    <p id="Descrição"></p>
+    <h1>Religiao:</h1>
+    <p id="Religiao"></p>
+    <h1>Tendencia:</h1>
+    <p id="Tendencia"></p>
+    <div class="Classe">
+      <h1>Classe:</h1>
+      <h1 id="Classe"></h1>
+      <p id="DescricaoClasse"></p>
+    </div>
+    <div class="Raca">
+      <h1>Raca:</h1>
+      <h1 id="Raca"></h1>
+      <p id="DescricaoRaca"></p>
+    </div>
+    <div class="Atributos">
+      <h1>Atributos:</h1>
+      <p>Carisma:</p>
+      <p id="Carisma"></p>
+      <p>Constituição:</p>
+      <p id="Constituicao"></p>
+      <p>Destreza:</p>
+      <p id="Destreza"></p>
+      <p>Força:</p>
+      <p id="Forca"></p>
+      <p>Inteligencia:</p>
+      <p id="Inteligencia"></p>
+      <p>Sabedoria:</p>
+      <p id="Sabedoria"></p>
+      <div class="Magias">
+        <h1>Magias Adquiridas</h1>
+        <p id="magias"></p>
+      </div>
+
+    </div>
+  </div>
+  
+
+
+</body>
+
+<script src="/assets/js/seupersonagem.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="/assets/js/perfil.js"></script>
+
+</html>

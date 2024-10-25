@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/assets/css/login_registro.css" class="css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="form">
+            <form class="formulario" id="formulario">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-buttom">
+                        <button><a href="login.html">Entrar</a></button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="first-name">Nome Completo</label>
+                        <input id="first-name" type="text" name="first-name" placeholder="Digite seu Nome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="Username">Nome de Usuário</label>
+                        <input id="Username" type="text" name="Username" placeholder="Nome de Usuário" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu Email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="senha">Senha</label>
+                        <input id="senha" type="password" name="senha" placeholder="Digite sua Senha" required>
+                        <ion-icon id="togglePassword" name="eye-off-outline"></ion-icon>
+                    </div>
+                </div>
+            <div class="continue-button">
+                    <button id="enviar" onclick="enviar()"><a href="login.html">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/registro.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: D&deas
+authors:
+  - family-names: França da Silva
+    given-names: Kaiky
+  - family-names: Pinto Martins
+    given-names: Maria Eduarda
+  - family-names: Azevedo Cota Barbosa
+    given-names: Letícia
+  - family-names: Morais Pimenta
+    given-names: Arthur
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Val Machado 
+    given-names: Max
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Ferreira
+    given-names: Walisson
+keywords:
+  - Ideias para RPG
+  - Jogadores
+  - Tabuleiro
+  - Quer usar nossa plataforma? Role os dados!
+  - Sepultura nunca será esquecido
+repository-code: https://github.com/ICEI-PUC-Minas-CC-TI/plmg-cc-ti2-2024-1-g06-d-deas.git
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-03-26
